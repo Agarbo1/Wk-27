@@ -20,6 +20,10 @@ const router = createBrowserRouter([
         element: <Movies />
       },
       {
+        path: '/not-logged-in',
+        element: <h1>You Must Be Logged In To Enter</h1>
+      },
+      {
         path: '*',
         element: <h1>Page Not Found</h1>
       }
