@@ -44,13 +44,22 @@ function Layout() {
       <nav className='comp nav'>
         <ul>
           <li>
-          <NavLink className={({isActive}) => isActive? 'purple' : ''} to='/'>Home</NavLink>
+          <NavLink to='/'
+          className={({isActive}) => isActive? 'purple' : ''}
+          style={({isActive}) => isActive? {fontWeight: 'bold'} : {}}
+          >Home</NavLink>
           </li>
           <li>
-          <NavLink className={({isActive}) => isActive? 'purple' : ''} to='/stocks'>Stocks</NavLink>
+          <NavLink to='/stocks'
+          className={({isActive}) => isActive? 'purple' : ''}
+          style={({isActive}) => isActive? {fontWeight: 'bold'} : {}}
+          >Stocks</NavLink>
           </li>
           <li>
-          <NavLink className={({isActive}) => isActive? 'purple' : ''} to='/movies'>Home</NavLink>
+          <NavLink to='/movies'
+          className={({isActive}) => isActive? 'purple' : ''}
+          style={({isActive}) => isActive? {fontWeight: 'bold'} : {}}
+          >Movies</NavLink>
           </li>
         </ul>
       <main>
